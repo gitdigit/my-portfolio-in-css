@@ -217,37 +217,42 @@ margin-bottom: 50px;
 }
 
 .project > * {
-    height: 20rem;
-    width: 100%;
-    font-size: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centrer verticalement */
-    align-items: center; /* Centrer horizontalement */
+    justify-content: space-between; /* Répartit l’espace entre les éléments */
+    align-items: center; /* Centre horizontalement */
     position: relative;
+    height: 20rem;
+    width: 100%;
+    font-size: 18px;
     color: black;
     transition: all 0.2s ease;
     border: 1px solid var(--color-body);
-    box-sizing: border-box; /* Boîte de dimensionnement */
+    box-sizing: border-box;
+    padding: 1.5rem;
 }
 
 .project-name {
     font-weight: 900;
     text-align: center;
-    margin-bottom: auto; /* Pousse le titre vers le bas */
-    top: 130px;
 }
 
 .language {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
-    margin-top: auto; /* Pousse les langages vers le bas */
-    word-spacing: 50px;
+    text-align: center;
+    margin-top: auto; /* S'assure que le texte des langages est toujours en bas */
+    padding-top: 10px;
+    position: absolute;
+    bottom: 10px;
 }
 
 .project-link {
-    display: inline-flex;
-    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 40px; 
 }
   
 .project-link a {
